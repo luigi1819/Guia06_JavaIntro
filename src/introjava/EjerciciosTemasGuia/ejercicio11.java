@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package introjava;
+package introjava.EjerciciosTemasGuia;
 import java.util.Scanner;
 /**
  *
@@ -16,21 +16,18 @@ public class ejercicio11 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    
         Scanner leer = new Scanner(System.in);
          System.out.println("leer frase");
         String frase = leer.nextLine();
-        remplazar(frase);
-        
+        remplazar(frase); 
     }
-    
-   
+
     public static String remplazar(String frase){
          int contador = 0;
          String newFrase="";
          String caracterFrase;
         do{
-            caracterFrase=frase.substring(contador, contador+1);
+            caracterFrase=frase.substring(contador, contador+1);//0-1//1-2
             switch(caracterFrase){
                 case "a":
                     caracterFrase = "@";
@@ -48,7 +45,8 @@ public class ejercicio11 {
                     caracterFrase = "*";
                     break;
                 default:
-                  caracterFrase=caracterFrase;     
+                  caracterFrase=caracterFrase;
+                    break;
             }
             newFrase = newFrase + caracterFrase; 
             contador++;

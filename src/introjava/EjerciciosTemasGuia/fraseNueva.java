@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package introjava;
+package introjava.EjerciciosTemasGuia;
 
 /**
  *
  * @author LuiG
  */
-class frase {
+class fraseNueva {
     
 }

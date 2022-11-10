@@ -27,24 +27,20 @@ public class EjercicioExtra01 {
     }
     
     public static void convertirTiempo(int tiempoEnMinutos){
-        final int dias=1440;
-        final int horas=60;
+        final int DIAS=1440;
+        final int HORAS=60;
         int diasTotal;
         int horasTotal;
         if (tiempoEnMinutos >= 1440){
-            diasTotal=tiempoEnMinutos/dias;
-            tiempoEnMinutos %=  dias ;
-            System.out.println(tiempoEnMinutos);
-            horasTotal = tiempoEnMinutos/horas;
-            
-            tiempoEnMinutos%=  horas;
-            System.out.println(tiempoEnMinutos);
+            diasTotal=tiempoEnMinutos/DIAS;
+            tiempoEnMinutos %=  DIAS ;
+            horasTotal = tiempoEnMinutos/HORAS;
+            tiempoEnMinutos%=  HORAS;
+           
             System.out.println("la cantidad de minutos es equivalante a "+diasTotal+" dias "+ horasTotal+" horas "+tiempoEnMinutos+" minutos ");
         }else{
-            horasTotal = tiempoEnMinutos/horas;
-            System.out.println(tiempoEnMinutos);
-            tiempoEnMinutos%=horas;
-            System.out.println(tiempoEnMinutos);
+            horasTotal = tiempoEnMinutos/HORAS;
+            tiempoEnMinutos%=HORAS;
             System.out.println("la cantidad de minutos es equivalante a "+ horasTotal+" horas "+tiempoEnMinutos+" minutos ");
            
         }

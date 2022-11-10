@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package introjava;
+package introjava.EjerciciosTemasGuia;
 import  java.util.Scanner;
 /**
  *
@@ -22,7 +22,10 @@ public class ejercicio12 {
         int numero = leer.nextInt();
         System.out.println("ingresa el numero por el cual dividiras el primero");
         int numeroDivisor = leer.nextInt();
-        
+
+        if (numeroDivisor==0) {
+            System.out.println("no se puede dividir por 0");
+        }else{
         almacenarResultadoFuncionMultiplo=multiplo(numero,numeroDivisor);
         
         if (almacenarResultadoFuncionMultiplo == 0){
@@ -30,6 +33,8 @@ public class ejercicio12 {
         }else{
             System.out.println("el numero uno no es multiplo del numero dos");
         }; 
+        }
+        
     }
     
     public static int multiplo(int numero,int numeroDivisor){

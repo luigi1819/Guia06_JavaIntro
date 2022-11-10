@@ -22,14 +22,9 @@ public class GuiaEjercicio11 {
         System.out.println("Ingresa un numero 2");
         int numero2 = leer.nextInt();
         int opcion;
+        int confirmarSalir = 0;
         do{
-        System.out.println("Menu");
-        System.out.println("1.Sumar");
-        System.out.println("2.Restar");
-        System.out.println("3.Multiplicar");
-        System.out.println("4.Dividir");
-        System.out.println("5.Salir  ");
-        System.out.println("Elija la opcion");
+        menu();
         opcion = leer.nextInt();
             switch(opcion){
                 case 1:
@@ -45,23 +40,29 @@ public class GuiaEjercicio11 {
                     System.out.println("la division es "+(numero1/numero2));
                 break;
                 case 5:
-                    if(opcion==5){
-                        System.out.println("estas seguro que deseas salir S-Confirmar - N--Negar");
-                        String confirmar = leer.nextLine();
-                        if(confirmar.equals("s")){
-                        opcion=5;
-                        }else{
-                        break;
-                        }
-                        
-                        
-                    }
+                    confirmarSalir = confirmar();
                 break;
             }    
-       
-        }while(opcion != 5);
-        
-        
+        }while(confirmarSalir != 5);  
     }
     
+    public static void menu(){
+        System.out.println("Menu");
+        System.out.println("1.Sumar");
+        System.out.println("2.Restar");
+        System.out.println("3.Multiplicar");
+        System.out.println("4.Dividir");
+        System.out.println("5.Salir  ");
+        System.out.println("Elija la opcion");
+    }
+    public static int confirmar(){
+        System.out.println("desea salir confirmar con s - Negar con N");
+        Scanner leer = new Scanner(System.in);
+        String confirmarChar = leer.nextLine();
+        if( confirmarChar.equals("s")||confirmarChar.equals("S") ){
+            return 5;
+        }else{
+            return 0;
+        }
+    }
 }

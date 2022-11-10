@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package introjava;
+package introjava.EjerciciosTemasGuia;
 import java.util.Scanner;
 /**
  *
@@ -20,6 +20,7 @@ public class ejercicio10 {
          int numeroIngresado;
          int contador = 0;
          String asteriscosPorNumero ="";
+         
          for (int i = 0; i < 4; i++) {
              //validar numero
             do{
@@ -28,9 +29,10 @@ public class ejercicio10 {
                }while(numeroIngresado>20);
             //generar asteriscos
             do{
-                asteriscosPorNumero = "*"+asteriscosPorNumero;
+                asteriscosPorNumero += "*";//*******
                 contador++;
             }while(contador!=numeroIngresado);
+            
             //imprimir numero y asteriscos
             System.out.println(numeroIngresado+" "+asteriscosPorNumero);
             //limpiar variables
