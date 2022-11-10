@@ -1,2 +1,2 @@
-# Guia06_JavaIntro
-Entrar en la Carpeta SRC.INTRO JAVA PARA VER LOS EJERCICIOS
+# Guia06_JavaIntro <H1> IMPORTANTE </H1>
+Entrar en la Carpeta SRC.INTROJAVA PARA VER LOS EJERCICIOS
